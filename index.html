@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1 class="py-5 text-center">Javascript Calculator</h1>
+    <!--Addition-->
+    <div class="row my-2">
+        <div class="col-md-3">
+            <input type="number" class="form-control input1 mb-2" placeholder="Enter number">
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-outline-info btn-block mb-2 sign" disabled>+</button>
+        </div>
+        <div class="col-md-3">
+            <input type="number" class="form-control input2 mb-2" placeholder="Enter number">
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-primary btn-block mb-2" onclick="addFunction()">=</button>
+        </div>
+    </div>
+    <hr>
+    <!--Subtraction-->
+    <div class="row my-2">
+        <div class="col-md-3">
+            <input type="number" class="form-control input3 mb-2" placeholder="Enter number">
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-outline-info btn-block mb-2 sign" disabled>-</button>
+        </div>
+        <div class="col-md-3">
+            <input type="number" class="form-control input4 mb-2" placeholder="Enter number">
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-primary btn-block mb-2" onclick="subFunction()">=</button>
+        </div>
+    </div>
+    <hr>
+    <!--Multiplication-->
+    <div class="row my-2">
+        <div class="col-md-3">
+            <input type="number" class="form-control input5 mb-2" placeholder="Enter number">
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-outline-info btn-block mb-2 sign" disabled>X</button>
+        </div>
+        <div class="col-md-3">
+            <input type="number" class="form-control input6 mb-2" placeholder="Enter number">
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-primary btn-block mb-2" onclick="multiplicationFunction()">=</button>
+        </div>
+    </div>
+    <hr>
+    <!--Division-->
+    <div class="row my-2">
+        <div class="col-md-3">
+            <input type="number" class="form-control input7 mb-2" placeholder="Enter number">
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-outline-info btn-block mb-2 sign" disabled>/</button>
+        </div>
+        <div class="col-md-3">
+            <input type="number" class="form-control input8 mb-2" placeholder="Enter number">
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-primary btn-block mb-2" onclick="divisionFunction()">=</button>
+        </div>
+    </div>
+    <hr>
+    <button class="btn btn-danger btn-block" onclick="reset()"> RESET FIELDS</button>
+    <!-- /.btn btn-danger -->
+</div>
+</body>
+</html>
